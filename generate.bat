@@ -1,0 +1,1 @@
+haxelib run dox -in com -ex adobe -ex post
