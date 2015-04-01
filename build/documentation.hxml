@@ -11,7 +11,7 @@
 -swf-version 12
 
 # Genome2D flags
--D stage3Donly
+-D genome_stage3donly
 
 # Haxe flags
 -dce no
