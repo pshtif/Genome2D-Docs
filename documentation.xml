@@ -3790,12 +3790,12 @@
 			<haxe_doc>Signal dispatched when Genome2D is rendering, after it rendered its own node graph</haxe_doc>
 		</onPostRender>
 		<get_onPostRender get="inline" set="null" line="125"><f a=""><c path="msignal.Signal0"/></f></get_onPostRender>
-		<g2d_onKeySignal><c path="msignal.Signal1"><c path="com.genome2d.signals.GKeyboardSignal"/></c></g2d_onKeySignal>
+		<g2d_onKeySignal><c path="msignal.Signal1"><c path="com.genome2d.callbacks.GKeyboardSignal"/></c></g2d_onKeySignal>
 		<onKeySignal public="1" get="accessor" set="null">
-			<c path="msignal.Signal1"><c path="com.genome2d.signals.GKeyboardSignal"/></c>
+			<c path="msignal.Signal1"><c path="com.genome2d.callbacks.GKeyboardSignal"/></c>
 			<haxe_doc>Signal dispatched when Genome2D processes keyboard signals</haxe_doc>
 		</onKeySignal>
-		<get_onKeySignal get="inline" set="null" line="136"><f a=""><c path="msignal.Signal1"><c path="com.genome2d.signals.GKeyboardSignal"/></c></f></get_onKeySignal>
+		<get_onKeySignal get="inline" set="null" line="136"><f a=""><c path="msignal.Signal1"><c path="com.genome2d.callbacks.GKeyboardSignal"/></c></f></get_onKeySignal>
 		<g2d_currentFrameId><x path="Int"/></g2d_currentFrameId>
 		<getCurrentFrameId public="1" get="inline" set="null" line="144">
 			<f a=""><x path="Int"/></f>
@@ -3885,13 +3885,13 @@
 		</g2d_removeCameraController>
 		<g2d_contextMouseSignalHandler set="method" line="355">
 			<f a="p_signal">
-				<c path="com.genome2d.signals.GMouseSignal"/>
+				<c path="com.genome2d.callbacks.GMouseSignal"/>
 				<x path="Void"/>
 			</f>
 			<meta><m n=":access"><e>'???'</e></m></meta>
 		</g2d_contextMouseSignalHandler>
 		<g2d_contextKeySignalHandler set="method" line="373"><f a="p_signal">
-	<c path="com.genome2d.signals.GKeyboardSignal"/>
+	<c path="com.genome2d.callbacks.GKeyboardSignal"/>
 	<x path="Void"/>
 </f></g2d_contextKeySignalHandler>
 		<new set="method" line="191">
@@ -4391,7 +4391,7 @@
 		<captureMouseEvent public="1" set="method" line="116"><f a="p_context:p_captured:p_signal">
 	<t path="com.genome2d.context.IContext"/>
 	<x path="Bool"/>
-	<c path="com.genome2d.signals.GMouseSignal"/>
+	<c path="com.genome2d.callbacks.GMouseSignal"/>
 	<x path="Bool"/>
 </f></captureMouseEvent>
 		<dispose public="1" set="method" line="143" override="1"><f a=""><x path="Void"/></f></dispose>
@@ -4431,7 +4431,7 @@
 				<x path="Bool"/>
 				<x path="Float"/>
 				<x path="Float"/>
-				<c path="com.genome2d.signals.GMouseSignal"/>
+				<c path="com.genome2d.callbacks.GMouseSignal"/>
 				<x path="Bool"/>
 			</f>
 			<haxe_doc>*</haxe_doc>
@@ -4493,7 +4493,7 @@
 				<x path="Bool"/>
 				<x path="Float"/>
 				<x path="Float"/>
-				<c path="com.genome2d.signals.GMouseSignal"/>
+				<c path="com.genome2d.callbacks.GMouseSignal"/>
 				<x path="Bool"/>
 			</f>
 			<meta><m n=":dox"><e>hide</e></m></meta>
@@ -4652,7 +4652,7 @@
 	<x path="Bool"/>
 	<x path="Float"/>
 	<x path="Float"/>
-	<c path="com.genome2d.signals.GMouseSignal"/>
+	<c path="com.genome2d.callbacks.GMouseSignal"/>
 	<x path="Bool"/>
 </f></processContextMouseSignal>
 		<new public="1" set="method" line="22"><f a=""><x path="Void"/></f></new>
@@ -4718,7 +4718,7 @@
 				<x path="Bool"/>
 				<x path="Float"/>
 				<x path="Float"/>
-				<c path="com.genome2d.signals.GMouseSignal"/>
+				<c path="com.genome2d.callbacks.GMouseSignal"/>
 				<x path="Bool"/>
 			</f>
 			<meta><m n=":dox"><e>hide</e></m></meta>
@@ -5000,7 +5000,7 @@
 	<x path="Bool"/>
 	<x path="Float"/>
 	<x path="Float"/>
-	<c path="com.genome2d.signals.GMouseSignal"/>
+	<c path="com.genome2d.callbacks.GMouseSignal"/>
 	<x path="Bool"/>
 </f></processContextMouseSignal>
 		<new public="1" set="method" line="28"><f a=""><x path="Void"/></f></new>
@@ -5133,7 +5133,7 @@
 	<x path="Bool"/>
 	<x path="Float"/>
 	<x path="Float"/>
-	<c path="com.genome2d.signals.GMouseSignal"/>
+	<c path="com.genome2d.callbacks.GMouseSignal"/>
 	<x path="Bool"/>
 </f></processContextMouseSignal>
 		<new public="1" set="method" line="25"><f a=""><x path="Void"/></f></new>
@@ -5235,7 +5235,7 @@
 				<x path="Bool"/>
 				<x path="Float"/>
 				<x path="Float"/>
-				<c path="com.genome2d.signals.GMouseSignal"/>
+				<c path="com.genome2d.callbacks.GMouseSignal"/>
 				<x path="Bool"/>
 			</f>
 			<meta><m n=":dox"><e>hide</e></m></meta>
@@ -5301,7 +5301,7 @@
 	<x path="Bool"/>
 	<x path="Float"/>
 	<x path="Float"/>
-	<c path="com.genome2d.signals.GMouseSignal"/>
+	<c path="com.genome2d.callbacks.GMouseSignal"/>
 	<x path="Bool"/>
 </f></processContextMouseSignal>
 		<getBounds public="1" set="method" line="207"><f a="?p_bounds" v="null">
@@ -5336,7 +5336,7 @@
 	<x path="Bool"/>
 	<x path="Float"/>
 	<x path="Float"/>
-	<c path="com.genome2d.signals.GMouseSignal"/>
+	<c path="com.genome2d.callbacks.GMouseSignal"/>
 	<x path="Bool"/>
 </f></processContextMouseSignal>
 		<new public="1" set="method" line="12"><f a=""><x path="Void"/></f></new>
@@ -5829,9 +5829,9 @@
 		<g2d_onFrame><c path="msignal.Signal1"><x path="Float"/></c></g2d_onFrame>
 		<onFrame public="1" get="accessor" set="null"><c path="msignal.Signal1"><x path="Float"/></c></onFrame>
 		<get_onFrame get="inline" set="null" line="132"><f a=""><c path="msignal.Signal1"><x path="Float"/></c></f></get_onFrame>
-		<g2d_onKeyboardSignal><c path="msignal.Signal1"><c path="com.genome2d.signals.GKeyboardSignal"/></c></g2d_onKeyboardSignal>
-		<onKeyboardSignal public="1" get="accessor" set="null"><c path="msignal.Signal1"><c path="com.genome2d.signals.GKeyboardSignal"/></c></onKeyboardSignal>
-		<get_onKeyboardSignal get="inline" set="null" line="140"><f a=""><c path="msignal.Signal1"><c path="com.genome2d.signals.GKeyboardSignal"/></c></f></get_onKeyboardSignal>
+		<g2d_onKeyboardSignal><c path="msignal.Signal1"><c path="com.genome2d.callbacks.GKeyboardSignal"/></c></g2d_onKeyboardSignal>
+		<onKeyboardSignal public="1" get="accessor" set="null"><c path="msignal.Signal1"><c path="com.genome2d.callbacks.GKeyboardSignal"/></c></onKeyboardSignal>
+		<get_onKeyboardSignal get="inline" set="null" line="140"><f a=""><c path="msignal.Signal1"><c path="com.genome2d.callbacks.GKeyboardSignal"/></c></f></get_onKeyboardSignal>
 		<g2d_onResize><c path="msignal.Signal2">
 	<x path="Int"/>
 	<x path="Int"/>
@@ -5844,9 +5844,9 @@
 	<x path="Int"/>
 	<x path="Int"/>
 </c></f></get_onResize>
-		<g2d_onMouseSignal><c path="msignal.Signal1"><c path="com.genome2d.signals.GMouseSignal"/></c></g2d_onMouseSignal>
-		<onMouseSignal public="1" get="accessor" set="null"><c path="msignal.Signal1"><c path="com.genome2d.signals.GMouseSignal"/></c></onMouseSignal>
-		<get_onMouseSignal get="inline" set="null" line="156"><f a=""><c path="msignal.Signal1"><c path="com.genome2d.signals.GMouseSignal"/></c></f></get_onMouseSignal>
+		<g2d_onMouseSignal><c path="msignal.Signal1"><c path="com.genome2d.callbacks.GMouseSignal"/></c></g2d_onMouseSignal>
+		<onMouseSignal public="1" get="accessor" set="null"><c path="msignal.Signal1"><c path="com.genome2d.callbacks.GMouseSignal"/></c></onMouseSignal>
+		<get_onMouseSignal get="inline" set="null" line="156"><f a=""><c path="msignal.Signal1"><c path="com.genome2d.callbacks.GMouseSignal"/></c></f></get_onMouseSignal>
 		<g2d_onInvalidated><c path="msignal.Signal0"/></g2d_onInvalidated>
 		<onInvalidated public="1" get="accessor" set="null"><c path="msignal.Signal0"/></onInvalidated>
 		<get_onInvalidated get="inline" set="null" line="164"><f a=""><c path="msignal.Signal0"/></f></get_onInvalidated>
@@ -6886,30 +6886,30 @@
 		<mousePixelEnabled public="1"><x path="Bool"/></mousePixelEnabled>
 		<mousePixelTreshold public="1"><x path="Int"/></mousePixelTreshold>
 		<filter public="1"><c path="com.genome2d.context.filters.GFilter"/></filter>
-		<g2d_onMouseDown><c path="msignal.Signal1"><c path="com.genome2d.signals.GNodeMouseSignal"/></c></g2d_onMouseDown>
-		<onMouseDown public="1" get="accessor" set="null"><c path="msignal.Signal1"><c path="com.genome2d.signals.GNodeMouseSignal"/></c></onMouseDown>
-		<get_onMouseDown set="method" line="351"><f a=""><c path="msignal.Signal1"><c path="com.genome2d.signals.GNodeMouseSignal"/></c></f></get_onMouseDown>
-		<g2d_onMouseMove><c path="msignal.Signal1"><c path="com.genome2d.signals.GNodeMouseSignal"/></c></g2d_onMouseMove>
-		<onMouseMove public="1" get="accessor" set="null"><c path="msignal.Signal1"><c path="com.genome2d.signals.GNodeMouseSignal"/></c></onMouseMove>
-		<get_onMouseMove set="method" line="359"><f a=""><c path="msignal.Signal1"><c path="com.genome2d.signals.GNodeMouseSignal"/></c></f></get_onMouseMove>
-		<g2d_onMouseClick><c path="msignal.Signal1"><c path="com.genome2d.signals.GNodeMouseSignal"/></c></g2d_onMouseClick>
-		<onMouseClick public="1" get="accessor" set="null"><c path="msignal.Signal1"><c path="com.genome2d.signals.GNodeMouseSignal"/></c></onMouseClick>
-		<get_onMouseClick set="method" line="367"><f a=""><c path="msignal.Signal1"><c path="com.genome2d.signals.GNodeMouseSignal"/></c></f></get_onMouseClick>
-		<g2d_onMouseUp><c path="msignal.Signal1"><c path="com.genome2d.signals.GNodeMouseSignal"/></c></g2d_onMouseUp>
-		<onMouseUp public="1" get="accessor" set="null"><c path="msignal.Signal1"><c path="com.genome2d.signals.GNodeMouseSignal"/></c></onMouseUp>
-		<get_onMouseUp set="method" line="375"><f a=""><c path="msignal.Signal1"><c path="com.genome2d.signals.GNodeMouseSignal"/></c></f></get_onMouseUp>
-		<g2d_onMouseOver><c path="msignal.Signal1"><c path="com.genome2d.signals.GNodeMouseSignal"/></c></g2d_onMouseOver>
-		<onMouseOver public="1" get="accessor" set="null"><c path="msignal.Signal1"><c path="com.genome2d.signals.GNodeMouseSignal"/></c></onMouseOver>
-		<get_onMouseOver set="method" line="383"><f a=""><c path="msignal.Signal1"><c path="com.genome2d.signals.GNodeMouseSignal"/></c></f></get_onMouseOver>
-		<g2d_onMouseOut><c path="msignal.Signal1"><c path="com.genome2d.signals.GNodeMouseSignal"/></c></g2d_onMouseOut>
-		<onMouseOut public="1" get="accessor" set="null"><c path="msignal.Signal1"><c path="com.genome2d.signals.GNodeMouseSignal"/></c></onMouseOut>
-		<get_onMouseOut set="method" line="391"><f a=""><c path="msignal.Signal1"><c path="com.genome2d.signals.GNodeMouseSignal"/></c></f></get_onMouseOut>
-		<g2d_onRightMouseDown><c path="msignal.Signal1"><c path="com.genome2d.signals.GNodeMouseSignal"/></c></g2d_onRightMouseDown>
-		<onRightMouseDown public="1"><c path="msignal.Signal1"><c path="com.genome2d.signals.GNodeMouseSignal"/></c></onRightMouseDown>
-		<g2d_onRightMouseUp><c path="msignal.Signal1"><c path="com.genome2d.signals.GNodeMouseSignal"/></c></g2d_onRightMouseUp>
-		<onRightMouseUp public="1"><c path="msignal.Signal1"><c path="com.genome2d.signals.GNodeMouseSignal"/></c></onRightMouseUp>
-		<g2d_onRightMouseClick><c path="msignal.Signal1"><c path="com.genome2d.signals.GNodeMouseSignal"/></c></g2d_onRightMouseClick>
-		<onRightMouseClick public="1"><c path="msignal.Signal1"><c path="com.genome2d.signals.GNodeMouseSignal"/></c></onRightMouseClick>
+		<g2d_onMouseDown><c path="msignal.Signal1"><c path="com.genome2d.callbacks.GNodeMouseSignal"/></c></g2d_onMouseDown>
+		<onMouseDown public="1" get="accessor" set="null"><c path="msignal.Signal1"><c path="com.genome2d.callbacks.GNodeMouseSignal"/></c></onMouseDown>
+		<get_onMouseDown set="method" line="351"><f a=""><c path="msignal.Signal1"><c path="com.genome2d.callbacks.GNodeMouseSignal"/></c></f></get_onMouseDown>
+		<g2d_onMouseMove><c path="msignal.Signal1"><c path="com.genome2d.callbacks.GNodeMouseSignal"/></c></g2d_onMouseMove>
+		<onMouseMove public="1" get="accessor" set="null"><c path="msignal.Signal1"><c path="com.genome2d.callbacks.GNodeMouseSignal"/></c></onMouseMove>
+		<get_onMouseMove set="method" line="359"><f a=""><c path="msignal.Signal1"><c path="com.genome2d.callbacks.GNodeMouseSignal"/></c></f></get_onMouseMove>
+		<g2d_onMouseClick><c path="msignal.Signal1"><c path="com.genome2d.callbacks.GNodeMouseSignal"/></c></g2d_onMouseClick>
+		<onMouseClick public="1" get="accessor" set="null"><c path="msignal.Signal1"><c path="com.genome2d.callbacks.GNodeMouseSignal"/></c></onMouseClick>
+		<get_onMouseClick set="method" line="367"><f a=""><c path="msignal.Signal1"><c path="com.genome2d.callbacks.GNodeMouseSignal"/></c></f></get_onMouseClick>
+		<g2d_onMouseUp><c path="msignal.Signal1"><c path="com.genome2d.callbacks.GNodeMouseSignal"/></c></g2d_onMouseUp>
+		<onMouseUp public="1" get="accessor" set="null"><c path="msignal.Signal1"><c path="com.genome2d.callbacks.GNodeMouseSignal"/></c></onMouseUp>
+		<get_onMouseUp set="method" line="375"><f a=""><c path="msignal.Signal1"><c path="com.genome2d.callbacks.GNodeMouseSignal"/></c></f></get_onMouseUp>
+		<g2d_onMouseOver><c path="msignal.Signal1"><c path="com.genome2d.callbacks.GNodeMouseSignal"/></c></g2d_onMouseOver>
+		<onMouseOver public="1" get="accessor" set="null"><c path="msignal.Signal1"><c path="com.genome2d.callbacks.GNodeMouseSignal"/></c></onMouseOver>
+		<get_onMouseOver set="method" line="383"><f a=""><c path="msignal.Signal1"><c path="com.genome2d.callbacks.GNodeMouseSignal"/></c></f></get_onMouseOver>
+		<g2d_onMouseOut><c path="msignal.Signal1"><c path="com.genome2d.callbacks.GNodeMouseSignal"/></c></g2d_onMouseOut>
+		<onMouseOut public="1" get="accessor" set="null"><c path="msignal.Signal1"><c path="com.genome2d.callbacks.GNodeMouseSignal"/></c></onMouseOut>
+		<get_onMouseOut set="method" line="391"><f a=""><c path="msignal.Signal1"><c path="com.genome2d.callbacks.GNodeMouseSignal"/></c></f></get_onMouseOut>
+		<g2d_onRightMouseDown><c path="msignal.Signal1"><c path="com.genome2d.callbacks.GNodeMouseSignal"/></c></g2d_onRightMouseDown>
+		<onRightMouseDown public="1"><c path="msignal.Signal1"><c path="com.genome2d.callbacks.GNodeMouseSignal"/></c></onRightMouseDown>
+		<g2d_onRightMouseUp><c path="msignal.Signal1"><c path="com.genome2d.callbacks.GNodeMouseSignal"/></c></g2d_onRightMouseUp>
+		<onRightMouseUp public="1"><c path="msignal.Signal1"><c path="com.genome2d.callbacks.GNodeMouseSignal"/></c></onRightMouseUp>
+		<g2d_onRightMouseClick><c path="msignal.Signal1"><c path="com.genome2d.callbacks.GNodeMouseSignal"/></c></g2d_onRightMouseClick>
+		<onRightMouseClick public="1"><c path="msignal.Signal1"><c path="com.genome2d.callbacks.GNodeMouseSignal"/></c></onRightMouseClick>
 		<g2d_mouseDownNode public="1"><c path="com.genome2d.node.GNode"/></g2d_mouseDownNode>
 		<g2d_mouseOverNode public="1"><c path="com.genome2d.node.GNode"/></g2d_mouseOverNode>
 		<g2d_rightMouseDownNode public="1"><c path="com.genome2d.node.GNode"/></g2d_rightMouseDownNode>
@@ -6918,7 +6918,7 @@
 				<x path="Bool"/>
 				<x path="Float"/>
 				<x path="Float"/>
-				<c path="com.genome2d.signals.GMouseSignal"/>
+				<c path="com.genome2d.callbacks.GMouseSignal"/>
 				<c path="com.genome2d.context.GCamera"/>
 				<x path="Bool"/>
 			</f>
@@ -6930,7 +6930,7 @@
 				<c path="com.genome2d.node.GNode"/>
 				<x path="Float"/>
 				<x path="Float"/>
-				<c path="com.genome2d.signals.GMouseSignal"/>
+				<c path="com.genome2d.callbacks.GMouseSignal"/>
 				<x path="Void"/>
 			</f>
 			<haxe_doc>*  Dispatch node mouse signals</haxe_doc>
@@ -7759,7 +7759,7 @@
 </f></g2d_initPrototype>
 	</class>
 	<class path="com.genome2d.proto.GPrototypeHelper" params="" file="Genome2D-Core/src/com/genome2d/proto/GPrototypeHelper.hx" extern="1"/>
-	<class path="com.genome2d.signals.GKeyboardSignal" params="" file="Genome2D-ContextFlash/src/com/genome2d/signals/GKeyboardSignal.hx">
+	<class path="com.genome2d.callbacks.GKeyboardSignal" params="" file="Genome2D-ContextFlash/src/com/genome2d/signals/GKeyboardSignal.hx">
 		<type public="1"><c path="String"/></type>
 		<keyCode public="1"><x path="Int"/></keyCode>
 		<new public="1" set="method" line="15"><f a="p_type:p_keyCode">
@@ -7768,7 +7768,7 @@
 	<x path="Void"/>
 </f></new>
 	</class>
-	<class path="com.genome2d.signals.GKeyboardSignalType" params="" file="Genome2D-ContextFlash/src/com/genome2d/signals/GKeyboardSignalType.hx">
+	<class path="com.genome2d.callbacks.GKeyboardSignalType" params="" file="Genome2D-ContextFlash/src/com/genome2d/signals/GKeyboardSignalType.hx">
 		<KEY_DOWN public="1" get="inline" set="null" line="12" static="1"><c path="String"/></KEY_DOWN>
 		<KEY_UP public="1" get="inline" set="null" line="13" static="1"><c path="String"/></KEY_UP>
 		<fromNative public="1" get="inline" set="null" line="15" static="1"><f a="p_nativeType">
@@ -7776,7 +7776,7 @@
 	<c path="String"/>
 </f></fromNative>
 	</class>
-	<class path="com.genome2d.signals.GMouseSignal" params="" file="Genome2D-ContextFlash/src/com/genome2d/signals/GMouseSignal.hx">
+	<class path="com.genome2d.callbacks.GMouseSignal" params="" file="Genome2D-ContextFlash/src/com/genome2d/signals/GMouseSignal.hx">
 		<x public="1"><x path="Float"/></x>
 		<y public="1"><x path="Float"/></y>
 		<buttonDown public="1"><x path="Bool"/></buttonDown>
@@ -7793,7 +7793,7 @@
 	<x path="Void"/>
 </f></new>
 	</class>
-	<class path="com.genome2d.signals.GMouseSignalType" params="" file="Genome2D-ContextFlash/src/com/genome2d/signals/GMouseSignalType.hx">
+	<class path="com.genome2d.callbacks.GMouseSignalType" params="" file="Genome2D-ContextFlash/src/com/genome2d/signals/GMouseSignalType.hx">
 		<MOUSE_DOWN public="1" get="inline" set="null" line="12" static="1"><c path="String"/></MOUSE_DOWN>
 		<MOUSE_MOVE public="1" get="inline" set="null" line="13" static="1"><c path="String"/></MOUSE_MOVE>
 		<MOUSE_UP public="1" get="inline" set="null" line="14" static="1"><c path="String"/></MOUSE_UP>
@@ -7806,48 +7806,48 @@
 	<c path="String"/>
 </f></fromNative>
 	</class>
-	<class path="com.genome2d.signals.GNodeMouseSignal" params="" file="Genome2D-Core/src/com/genome2d/signals/GNodeMouseSignal.hx">
+	<class path="com.genome2d.callbacks.GNodeMouseSignal" params="" file="Genome2D-Core/src/com/genome2d/signals/GNodeMouseSignal.hx">
 		<target public="1"><c path="com.genome2d.node.GNode"/></target>
 		<dispatcher public="1"><c path="com.genome2d.node.GNode"/></dispatcher>
 		<type public="1"><c path="String"/></type>
 		<localX public="1"><x path="Float"/></localX>
 		<localY public="1"><x path="Float"/></localY>
-		<g2d_contextSignal><c path="com.genome2d.signals.GMouseSignal"/></g2d_contextSignal>
+		<g2d_contextSignal><c path="com.genome2d.callbacks.GMouseSignal"/></g2d_contextSignal>
 		<contextSignal public="1" get="accessor" set="null">
-			<c path="com.genome2d.signals.GMouseSignal"/>
+			<c path="com.genome2d.callbacks.GMouseSignal"/>
 			<meta><m n="prototype"/></meta>
 		</contextSignal>
-		<get_contextSignal public="1" set="method" line="28"><f a=""><c path="com.genome2d.signals.GMouseSignal"/></f></get_contextSignal>
+		<get_contextSignal public="1" set="method" line="28"><f a=""><c path="com.genome2d.callbacks.GMouseSignal"/></f></get_contextSignal>
 		<new public="1" set="method" line="32"><f a="p_type:p_target:p_dispatcher:p_localX:p_localY:p_contextSignal">
 	<c path="String"/>
 	<c path="com.genome2d.node.GNode"/>
 	<c path="com.genome2d.node.GNode"/>
 	<x path="Float"/>
 	<x path="Float"/>
-	<c path="com.genome2d.signals.GMouseSignal"/>
+	<c path="com.genome2d.callbacks.GMouseSignal"/>
 	<x path="Void"/>
 </f></new>
 		<haxe_doc></haxe_doc>
 	</class>
-	<class path="com.genome2d.signals.GUIMouseSignal" params="" file="Genome2D-Core/src/com/genome2d/signals/GUIMouseSignal.hx">
+	<class path="com.genome2d.callbacks.GUIMouseSignal" params="" file="Genome2D-Core/src/com/genome2d/signals/GUIMouseSignal.hx">
 		<target public="1"><c path="com.genome2d.ui.element.GUIElement"/></target>
 		<dispatcher public="1"><c path="com.genome2d.ui.element.GUIElement"/></dispatcher>
 		<type public="1"><c path="String"/></type>
 		<localX public="1"><x path="Float"/></localX>
 		<localY public="1"><x path="Float"/></localY>
-		<g2d_contextSignal><c path="com.genome2d.signals.GMouseSignal"/></g2d_contextSignal>
+		<g2d_contextSignal><c path="com.genome2d.callbacks.GMouseSignal"/></g2d_contextSignal>
 		<contextSignal public="1" get="accessor" set="null">
-			<c path="com.genome2d.signals.GMouseSignal"/>
+			<c path="com.genome2d.callbacks.GMouseSignal"/>
 			<meta><m n="prototype"/></meta>
 		</contextSignal>
-		<get_contextSignal public="1" set="method" line="28"><f a=""><c path="com.genome2d.signals.GMouseSignal"/></f></get_contextSignal>
+		<get_contextSignal public="1" set="method" line="28"><f a=""><c path="com.genome2d.callbacks.GMouseSignal"/></f></get_contextSignal>
 		<new public="1" set="method" line="32"><f a="p_type:p_target:p_dispatcher:p_localX:p_localY:p_contextSignal">
 	<c path="String"/>
 	<c path="com.genome2d.ui.element.GUIElement"/>
 	<c path="com.genome2d.ui.element.GUIElement"/>
 	<x path="Float"/>
 	<x path="Float"/>
-	<c path="com.genome2d.signals.GMouseSignal"/>
+	<c path="com.genome2d.callbacks.GMouseSignal"/>
 	<x path="Void"/>
 </f></new>
 		<haxe_doc></haxe_doc>
@@ -8908,35 +8908,35 @@
 		<disposeChildren public="1" set="method" line="867"><f a=""><x path="Void"/></f></disposeChildren>
 		<dispose public="1" set="method" line="873"><f a=""><x path="Void"/></f></dispose>
 		<g2d_onMouseDown>
-			<c path="msignal.Signal1"><c path="com.genome2d.signals.GUIMouseSignal"/></c>
+			<c path="msignal.Signal1"><c path="com.genome2d.callbacks.GUIMouseSignal"/></c>
 			<haxe_doc>*****************************************************************************************************************
     *   MOUSE CODE
     *****************************************************************************************************************</haxe_doc>
 		</g2d_onMouseDown>
-		<onMouseDown public="1" get="accessor" set="null"><c path="msignal.Signal1"><c path="com.genome2d.signals.GUIMouseSignal"/></c></onMouseDown>
-		<get_onMouseDown get="inline" set="null" line="885"><f a=""><c path="msignal.Signal1"><c path="com.genome2d.signals.GUIMouseSignal"/></c></f></get_onMouseDown>
-		<g2d_onMouseUp><c path="msignal.Signal1"><c path="com.genome2d.signals.GUIMouseSignal"/></c></g2d_onMouseUp>
-		<onMouseUp public="1" get="accessor" set="null"><c path="msignal.Signal1"><c path="com.genome2d.signals.GUIMouseSignal"/></c></onMouseUp>
-		<get_onMouseUp get="inline" set="null" line="894"><f a=""><c path="msignal.Signal1"><c path="com.genome2d.signals.GUIMouseSignal"/></c></f></get_onMouseUp>
-		<g2d_onMouseMove><c path="msignal.Signal1"><c path="com.genome2d.signals.GUIMouseSignal"/></c></g2d_onMouseMove>
-		<onMouseMove public="1" get="accessor" set="null"><c path="msignal.Signal1"><c path="com.genome2d.signals.GUIMouseSignal"/></c></onMouseMove>
-		<get_onMouseMove get="inline" set="null" line="903"><f a=""><c path="msignal.Signal1"><c path="com.genome2d.signals.GUIMouseSignal"/></c></f></get_onMouseMove>
-		<g2d_onMouseOver><c path="msignal.Signal1"><c path="com.genome2d.signals.GUIMouseSignal"/></c></g2d_onMouseOver>
-		<onMouseOver public="1" get="accessor" set="null"><c path="msignal.Signal1"><c path="com.genome2d.signals.GUIMouseSignal"/></c></onMouseOver>
-		<get_onMouseOver get="inline" set="null" line="912"><f a=""><c path="msignal.Signal1"><c path="com.genome2d.signals.GUIMouseSignal"/></c></f></get_onMouseOver>
-		<g2d_onMouseOut><c path="msignal.Signal1"><c path="com.genome2d.signals.GUIMouseSignal"/></c></g2d_onMouseOut>
-		<onMouseOut public="1" get="accessor" set="null"><c path="msignal.Signal1"><c path="com.genome2d.signals.GUIMouseSignal"/></c></onMouseOut>
-		<get_onMouseOut get="inline" set="null" line="921"><f a=""><c path="msignal.Signal1"><c path="com.genome2d.signals.GUIMouseSignal"/></c></f></get_onMouseOut>
-		<g2d_onMouseClick><c path="msignal.Signal1"><c path="com.genome2d.signals.GUIMouseSignal"/></c></g2d_onMouseClick>
-		<onMouseClick public="1" get="accessor" set="null"><c path="msignal.Signal1"><c path="com.genome2d.signals.GUIMouseSignal"/></c></onMouseClick>
-		<get_onMouseClick get="inline" set="null" line="930"><f a=""><c path="msignal.Signal1"><c path="com.genome2d.signals.GUIMouseSignal"/></c></f></get_onMouseClick>
+		<onMouseDown public="1" get="accessor" set="null"><c path="msignal.Signal1"><c path="com.genome2d.callbacks.GUIMouseSignal"/></c></onMouseDown>
+		<get_onMouseDown get="inline" set="null" line="885"><f a=""><c path="msignal.Signal1"><c path="com.genome2d.callbacks.GUIMouseSignal"/></c></f></get_onMouseDown>
+		<g2d_onMouseUp><c path="msignal.Signal1"><c path="com.genome2d.callbacks.GUIMouseSignal"/></c></g2d_onMouseUp>
+		<onMouseUp public="1" get="accessor" set="null"><c path="msignal.Signal1"><c path="com.genome2d.callbacks.GUIMouseSignal"/></c></onMouseUp>
+		<get_onMouseUp get="inline" set="null" line="894"><f a=""><c path="msignal.Signal1"><c path="com.genome2d.callbacks.GUIMouseSignal"/></c></f></get_onMouseUp>
+		<g2d_onMouseMove><c path="msignal.Signal1"><c path="com.genome2d.callbacks.GUIMouseSignal"/></c></g2d_onMouseMove>
+		<onMouseMove public="1" get="accessor" set="null"><c path="msignal.Signal1"><c path="com.genome2d.callbacks.GUIMouseSignal"/></c></onMouseMove>
+		<get_onMouseMove get="inline" set="null" line="903"><f a=""><c path="msignal.Signal1"><c path="com.genome2d.callbacks.GUIMouseSignal"/></c></f></get_onMouseMove>
+		<g2d_onMouseOver><c path="msignal.Signal1"><c path="com.genome2d.callbacks.GUIMouseSignal"/></c></g2d_onMouseOver>
+		<onMouseOver public="1" get="accessor" set="null"><c path="msignal.Signal1"><c path="com.genome2d.callbacks.GUIMouseSignal"/></c></onMouseOver>
+		<get_onMouseOver get="inline" set="null" line="912"><f a=""><c path="msignal.Signal1"><c path="com.genome2d.callbacks.GUIMouseSignal"/></c></f></get_onMouseOver>
+		<g2d_onMouseOut><c path="msignal.Signal1"><c path="com.genome2d.callbacks.GUIMouseSignal"/></c></g2d_onMouseOut>
+		<onMouseOut public="1" get="accessor" set="null"><c path="msignal.Signal1"><c path="com.genome2d.callbacks.GUIMouseSignal"/></c></onMouseOut>
+		<get_onMouseOut get="inline" set="null" line="921"><f a=""><c path="msignal.Signal1"><c path="com.genome2d.callbacks.GUIMouseSignal"/></c></f></get_onMouseOut>
+		<g2d_onMouseClick><c path="msignal.Signal1"><c path="com.genome2d.callbacks.GUIMouseSignal"/></c></g2d_onMouseClick>
+		<onMouseClick public="1" get="accessor" set="null"><c path="msignal.Signal1"><c path="com.genome2d.callbacks.GUIMouseSignal"/></c></onMouseClick>
+		<get_onMouseClick get="inline" set="null" line="930"><f a=""><c path="msignal.Signal1"><c path="com.genome2d.callbacks.GUIMouseSignal"/></c></f></get_onMouseClick>
 		<g2d_mouseDownElement><c path="com.genome2d.ui.element.GUIElement"/></g2d_mouseDownElement>
 		<g2d_mouseOverElement><c path="com.genome2d.ui.element.GUIElement"/></g2d_mouseOverElement>
 		<processMouseSignal public="1" set="method" line="938"><f a="p_captured:p_cameraX:p_cameraY:p_contextSignal">
 	<x path="Bool"/>
 	<x path="Float"/>
 	<x path="Float"/>
-	<c path="com.genome2d.signals.GMouseSignal"/>
+	<c path="com.genome2d.callbacks.GMouseSignal"/>
 	<x path="Bool"/>
 </f></processMouseSignal>
 		<g2d_dispatchMouseSignal set="method" line="962"><f a="p_type:p_element:p_localX:p_localY:p_contextSignal">
@@ -8944,7 +8944,7 @@
 	<c path="com.genome2d.ui.element.GUIElement"/>
 	<x path="Float"/>
 	<x path="Float"/>
-	<c path="com.genome2d.signals.GMouseSignal"/>
+	<c path="com.genome2d.callbacks.GMouseSignal"/>
 	<x path="Void"/>
 </f></g2d_dispatchMouseSignal>
 		<getPrototypeDefault public="1" set="method" line="242"><f a="?p_prototypeXml" v="null">
